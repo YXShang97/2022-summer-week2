@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "425px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1068px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+    <title>apple</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="bg-gray-900 bf-opacity-90 w-full fixed z-50">
+      <ul
+        class="text-gray-200 text-xs font-extralight hidden md:flex md:justify-evenly md:items-center md:m-auto max-w-7xl"
+      >
+        <li>
+          <a href="#"
+            ><img src="./images/apple-logo-white.png" class="w-6 py-2"
+          /></a>
+        </li>
+        <li><a href="#" class="hover:text-white">Store</a></li>
+        <li><a href="#" class="hover:text-white">Mac</a></li>
+        <li><a href="#" class="hover:text-white">iPad</a></li>
+        <li><a href="#" class="hover:text-white">iPhone</a></li>
+        <li><a href="#" class="hover:text-white">Watch</a></li>
+        <li><a href="#" class="hover:text-white">AirPods</a></li>
+        <li><a href="#" class="hover:text-white">TV&Home</a></li>
+        <li><a href="#" class="hover:text-white">Only on Apple</a></li>
+        <li><a href="#" class="hover:text-white">Accessories</a></li>
+        <li><a href="#" class="hover:text-white">Support</a></li>
+        <li>
+          <a href="#"><img src="./images/looking-into.png" class="w-4" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/handbag.png" class="w-4" /></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="bg-gray-900 bf-opacity-90 w-full fixed z-50">
+      <ul class="flex items-center justify-between mx-4 md:hidden">
+        <li>
+          <a href="#"><img src="./images/menu.png" class="w-4" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/apple-logo-white.png" class="w-6 py-2"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/handbag.png" class="w-4" /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Donation -->
+    <div class="flex items-center justify-center pt-16 pb-4">
+      <img src="./images/unicef.jpeg" class="w-32 mr-3" />
+      <a href="#" class="flex items-center justify-center text-blue-500">
+        <span class="text-md hover:underline"
+          >Donate to support families affected by the war in Ukraine</span
+        >
+        <img src="./images/arrow-top-right.png" class="w-4" />
+      </a>
+    </div>
+    <main>
+      <!-- MacBook Air -->
+      <div
+        class="flex flex-col items-center lg:flex-row lg:items-center lg:justify-center"
+      >
+        <div>
+          <h2 class="text-center text-5xl font-bold mt-12">MacBook Air</h2>
+          <h3 class="flex items-center justify-center my-4">
+            <span class="text-2xl mr-2"> Supercharged by </span>
+            <img src="./images/M2-chip.jpeg" class="w-10" />
+          </h3>
+          <p class="text-center text-gray-400 text-xl">Available next month</p>
+          <div class="my-4 flex justify-center">
+            <a
+              href="#"
+              class="text-blue-500 text-xl flex items-center mr-6 hover:underline"
+            >
+              Learn more
+              <img src="./images/arrow-right.png" class="w-6" />
+            </a>
+            <a
+              href="#"
+              class="text-blue-500 text-xl flex items-center hover:underline"
+            >
+              View pricing
+              <img src="./images/arrow-right.png" class="w-6" />
+            </a>
+          </div>
+        </div>
+        <img src="./images/macbook-air-2022.jpeg" />
+      </div>
+      <!-- iPhone 13 -->
+      <div class="grid grid-flow-row-dense justify-center bg-gray-100 mt-4">
+        <div>
+          <h2 class="text-center text-5xl font-bold mt-16">iPhone 13</h2>
+          <h3 class="flex items-center justify-center my-4">
+            <span class="text-2xl mr-2"> Your new superpower. </span>
+          </h3>
+          <div class="my-4 flex justify-center">
+            <a
+              href="#"
+              class="text-blue-500 text-xl flex items-center mr-6 hover:underline"
+            >
+              Learn more
+              <img src="./images/arrow-right.png" class="w-6" />
+            </a>
+            <a
+              href="#"
+              class="text-blue-500 text-xl flex items-center hover:underline"
+            >
+              Buy
+              <img src="./images/arrow-right.png" class="w-6" />
+            </a>
+          </div>
+        </div>
+        <img src="./images/iphone 13.jpeg" class="h-96" />
+      </div>
+      <!-- AirPods -->
+      <div class="relative mt-4">
+        <img src="./images/new-airpods-3.png" class="w-full" />
+        <div class="text-white absolute bottom-6 w-full">
+          <h2 class="text-center text-5xl font-bold">AirPods</h2>
+          <h3 class="text-center text-2xl mt-4">with Spatial Audio</h3>
+          <div class="my-4 flex justify-center">
+            <a href="#" class="text-xl flex items-center mr-6 hover:underline">
+              Learn more
+              <img src="./images/arrow-right-white.png" class="w-6" />
+            </a>
+            <a href="#" class="text-xl flex items-center hover:underline">
+              Buy
+              <img src="./images/arrow-right-white.png" class="w-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Other Products -->
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:mx-2 my-4">
+        <!-- MacBook Pro 13 -->
+        <div class="flex flex-col items-center bg-black">
+          <div>
+            <h2 class="text-center text-4xl font-bold text-white mt-16">
+              MacBook Pro 13"
+            </h2>
+            <h3 class="flex items-center justify-center my-3">
+              <span class="text-xl font-light mr-2 text-white">
+                Supercharged by
+              </span>
+              <img src="./images/M2-chip-2.jpeg" class="w-10" />
+            </h3>
+            <p class="text-center text-gray-400 text-lg font-light">
+              Order starting at 5 a.m. PDT on 6.17
+            </p>
+            <p class="text-center text-gray-400 text-lg font-light">
+              Available starting 6.24
+            </p>
+            <div class="mt-4 mb-20 flex justify-center">
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center mr-6 hover:underline"
+              >
+                Learn more
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center hover:underline"
+              >
+                View pricing
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+            </div>
+          </div>
+          <img src="./images/MacBook Pro.jpeg" class="h-96" />
+        </div>
+        <!-- Watch -->
+        <div class="flex flex-col items-center bg-gray-100">
+          <div>
+            <h2
+              class="flex items-center justify-center text-center text-4xl font-bold mt-16"
+            >
+              <img src="./images/Apple_logo_black.svg" class="w-6 mr-2" />
+              WATCH
+            </h2>
+            <h3
+              class="text-center text-md text-red-700 tracking-wider mt-2 mb-3"
+            >
+              SERIES 7
+            </h3>
+            <p class="text-center text-xl font-light">
+              It's our largest display yet.
+            </p>
+            <div class="mt-3 flex justify-center">
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center mr-6 hover:underline"
+              >
+                Learn more
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center hover:underline"
+              >
+                View pricing
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+            </div>
+          </div>
+          <img src="./images/Watch.jpeg" class="h-96 mt-8" />
+        </div>
+        <!-- iPad Air -->
+        <div class="flex flex-col items-center bg-black">
+          <div>
+            <h2 class="text-center text-4xl font-bold text-white mt-16">
+              iPad air
+            </h2>
+            <h3 class="text-center text-xl font-light text-white my-3">
+              Light. Bright. Full of might.
+            </h3>
+            <div class="my-4 flex justify-center">
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center mr-6 hover:underline"
+              >
+                Learn more
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center hover:underline"
+              >
+                Buy
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+            </div>
+          </div>
+          <img src="./images/ipad-air.png" class="w-full" />
+        </div>
+        <!-- Fitness+ -->
+        <div class="flex flex-col items-center bg-[#E6E6E6]">
+          <div>
+            <h2
+              class="flex items-center justify-center text-center text-4xl font-bold mt-16"
+            >
+              <img src="./images/Apple_logo_black.svg" class="w-6 mr-2" />
+              Fitness+
+            </h2>
+            <h3 class="text-center text-xl font-light my-3">
+              Get 3 months free when you buy an Apple Watch.
+            </h3>
+            <div
+              class="my-4 flex flex-col items-center lg:flex-row lg:justify-center"
+            >
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center mr-6 hover:underline"
+              >
+                Learn more
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center hover:underline"
+              >
+                Shop Apple Watch
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+            </div>
+          </div>
+          <img src="./images/Apple-Fitness.jpeg" class="w-full" />
+        </div>
+        <!-- Card -->
+        <div class="grid grid-flow-row-dense justify-center bg-[#F5F5F5]">
+          <div>
+            <h2
+              class="flex items-center justify-center text-center text-4xl font-bold mt-16"
+            >
+              <img src="./images/Apple_logo_black.svg" class="w-6 mr-2" />
+              Card
+            </h2>
+            <h3 class="text-center text-xl font-light my-3">
+              Get up to 3% Daily Cash back<br />
+              with every purchase.
+            </h3>
+            <div class="my-4 flex justify-center">
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center mr-6 hover:underline"
+              >
+                Learn more
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+              <a
+                href="#"
+                class="text-blue-500 text-lg flex items-center hover:underline"
+              >
+                Apply now
+                <img src="./images/arrow-right.png" class="w-6" />
+              </a>
+            </div>
+          </div>
+          <img src="./images/apple-credit-card 3.jpg" class="h-80" />
+        </div>
+        <!-- tv+ -->
+        <div class="relative">
+          <img src="./images/apple tv 2.jpeg" class="h-full w-full" />
+          <div class="flex justify-center">
+            <h2
+              class="text-5xl font-bold text-white flex items-center absolute top-16"
+            >
+              <img src="./images/apple-logo-white.png" class="w-9 mr-2" />
+              tv+
+            </h2>
+            <div class="absolute bottom-10">
+              <h1
+                class="text-center text-white text-5xl font-mono font-extrabold tracking-wider mb-4"
+              >
+                FOR ALL<br />MANKIND
+              </h1>
+              <h2
+                class="text-center text-[#6D1005] text-3xl font-mono font-extrabold tracking-wider mb-6"
+              >
+                MARS 1995
+              </h2>
+              <a
+                href="#"
+                class="text-xl text-white flex items-center hover:underline"
+              >
+                Streams the new episodes
+                <img src="./images/playCircle.png" class="w-6 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="w-full bg-gray-100 px-4">
+      <div class="max-w-5xl mx-auto">
+        <!-- explanation -->
+        <div class="text-gray-500 text-xs font-light">
+          <p class="pt-4 pb-1">
+            $9.99/month after trial. Offer good for 3 months after eligible
+            device activation. One subscription per Family Sharing group. Plan
+            automatically renews until cancelled. Restrictions and other terms
+            apply.
+          </p>
+          <p class="py-1">
+            To access and use all the features of Apple Card, you must add Apple
+            Card to Wallet on an iPhone or iPad with the latest version of iOS
+            or iPadOS. Update to the latest version by going to Settings >
+            General > Software Update. Tap Download and Install.
+          </p>
+          <p class="py-1">
+            Available for qualifying applicants in the United States.
+          </p>
+          <p class="py-1">
+            Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City
+            Branch.
+          </p>
+          <p class="py-1">
+            Learn more about how Apple Card applications are evaluated at
+            <a href="#" class="hover:underline"
+              >support.apple.com/kb/HT209218.</a
+            >
+          </p>
+          <p class="pt-1 pb-6">
+            $4.99/month after free trial. Only one offer per Apple ID and only
+            one offer per family if you’re part of a Family Sharing group,
+            regardless of the number of devices you or your family purchases.
+            This offer is not available if you or your Family have previously
+            accepted an Apple TV+ one year free offer. Offer good for 3 months
+            after eligible device activation. Plan automatically renews until
+            cancelled. Restrictions and other
+            <a href="#" class="hover:underline">terms</a>
+            apply.
+          </p>
+        </div>
+        <hr />
+        <!-- directory -->
+        <div
+          class="hidden md:grid md:grid-cols-5 text-gray-700 text-xs font-light leading-6 mt-4"
+        >
+          <!-- Shop and Learn -->
+          <ul>
+            <li class="font-bold">Shop and Learn</li>
+            <li><a href="#" class="hover:underline">Store</a></li>
+            <li><a href="#" class="hover:underline">Mac</a></li>
+            <li><a href="#" class="hover:underline">iPad</a></li>
+            <li><a href="#" class="hover:underline">iPhone</a></li>
+            <li><a href="#" class="hover:underline">Watch</a></li>
+            <li><a href="#" class="hover:underline">AirPods</a></li>
+            <li><a href="#" class="hover:underline">TV & Home</a></li>
+            <li><a href="#" class="hover:underline">AirTag</a></li>
+            <li><a href="#" class="hover:underline">Accessories</a></li>
+            <li><a href="#" class="hover:underline">Gift Cards</a></li>
+          </ul>
+          <!-- Services & Account -->
+          <div>
+            <ul>
+              <li class="font-bold">Services</li>
+              <li><a href="#" class="hover:underline">Apple Music</a></li>
+              <li><a href="#" class="hover:underline">Apple TV+</a></li>
+              <li><a href="#" class="hover:underline">Apple Fitness+</a></li>
+              <li><a href="#" class="hover:underline">Apple News+</a></li>
+              <li><a href="#" class="hover:underline">Apple Arcade</a></li>
+              <li><a href="#" class="hover:underline">iCloud</a></li>
+              <li><a href="#" class="hover:underline">Apple One</a></li>
+              <li><a href="#" class="hover:underline">Apple Card</a></li>
+              <li><a href="#" class="hover:underline">Apple Books</a></li>
+              <li><a href="#" class="hover:underline">Apple Podcasts</a></li>
+              <li><a href="#" class="hover:underline">App Store</a></li>
+            </ul>
+            <ul class="mt-4">
+              <li class="font-bold">Account</li>
+              <li>
+                <a href="#" class="hover:underline">Manage Your Apple ID</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Apple Store Account</a>
+              </li>
+              <li><a href="#" class="hover:underline">iCould.com</a></li>
+            </ul>
+          </div>
+          <!-- Apple Store -->
+          <ul>
+            <li class="font-bold">Apple Store</li>
+            <li><a href="#" class="hover:underline">Find a Store</a></li>
+            <li><a href="#" class="hover:underline">Genius Bar</a></li>
+            <li><a href="#" class="hover:underline">Today at Apple</a></li>
+            <li><a href="#" class="hover:underline">Apple Camp</a></li>
+            <li><a href="#" class="hover:underline">Apple Store App</a></li>
+            <li>
+              <a href="#" class="hover:underline">Refurbished and Clearance</a>
+            </li>
+            <li><a href="#" class="hover:underline">Financing</a></li>
+            <li><a href="#" class="hover:underline">Apple Trade In</a></li>
+            <li><a href="#" class="hover:underline">Order Status</a></li>
+            <li><a href="#" class="hover:underline">Shopping Help</a></li>
+          </ul>
+          <!-- For Business & Education & Healthcare & Government -->
+          <div>
+            <ul>
+              <li class="font-bold">For Business</li>
+              <li>
+                <a href="#" class="hover:underline">Apple and Business</a>
+              </li>
+              <li><a href="#" class="hover:underline">Shop for Business</a></li>
+            </ul>
+            <ul class="mt-4">
+              <li class="font-bold">For Education</li>
+              <li>
+                <a href="#" class="hover:underline">Apple and Education</a>
+              </li>
+              <li><a href="#" class="hover:underline">Shop for K-12</a></li>
+              <li><a href="#" class="hover:underline">Shop for College</a></li>
+            </ul>
+            <ul class="mt-4">
+              <li class="font-bold">For Healthcare</li>
+              <li>
+                <a href="#" class="hover:underline">Apple in Healthcare</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Health on Apple Watch</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Health Records on iPhone</a>
+              </li>
+            </ul>
+            <ul class="mt-4">
+              <li class="font-bold">For Government</li>
+              <li>
+                <a href="#" class="hover:underline">Shop for Government</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline"
+                  >Shop for Veterans and Military</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Apple Values & About Apple -->
+          <div>
+            <ul>
+              <li class="font-bold">Apple Values</li>
+              <li><a href="#" class="hover:underline">Accessibility</a></li>
+              <li><a href="#" class="hover:underline">Education</a></li>
+              <li><a href="#" class="hover:underline">Environment</a></li>
+              <li>
+                <a href="#" class="hover:underline">Inclusion and Diversity</a>
+              </li>
+              <li><a href="#" class="hover:underline">Privacy</a></li>
+              <li>
+                <a href="#" class="hover:underline"
+                  >Racial Equity and Justice</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Supplier Responsibility</a>
+              </li>
+            </ul>
+            <ul class="mt-4">
+              <li class="font-bold">About Apple</li>
+              <li><a href="#" class="hover:underline">Newsroom</a></li>
+              <li><a href="#" class="hover:underline">Apple Leadership</a></li>
+              <li>
+                <a href="#" class="hover:underline">Career Opportunities</a>
+              </li>
+              <li><a href="#" class="hover:underline">Investors</a></li>
+              <li>
+                <a href="#" class="hover:underline">Ethics & Compliance</a>
+              </li>
+              <li><a href="#" class="hover:underline">Events</a></li>
+              <li><a href="#" class="hover:underline">Contact Apple</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- directory for small screens -->
+        <div class="md:hidden text-gray-500 text-xs font-light leading-6 mt-8">
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>Shop and Learn</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>Services</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>Account</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>Apple Store</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>For Business</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>For Education</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>For Healthcare</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>For Government</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>Apple Values</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+          <a href="#" class="flex justify-between hover:text-gray-700">
+            <span>About Apple</span>
+            <span class="text-sm">+</span>
+          </a>
+          <hr class="my-1" />
+        </div>
+        <!-- More Ways to shop -->
+        <div class="text-gray-500 text-xs font-light md:mt-8 mt-4 mb-3">
+          More ways to shop:
+          <a href="#" class="text-blue-500 hover:underline"
+            >Find an Apple Store</a
+          >
+          or
+          <a href="#" class="text-blue-500 hover:underline">other retailer</a>
+          near you. Or call 1-800-MY-APPLE.
+        </div>
+        <hr class="hidden md:flex" />
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row md:justify-between mt-3 pb-20">
+          <span
+            class="order-2 md:order-1 mb-2 md:mb-0 text-gray-500 text-xs font-light"
+            >Copyright © 2022 Apple Inc. All rights reserved.</span
+          >
+          <div class="order-3 md:order-2 text-gray-700 text-xs font-light">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <span class="px-1 border-r-slate-300 border-r mr-2"></span>
+            <a href="#" class="hover:underline">Terms of Use</a>
+            <span class="px-1 border-r-slate-300 border-r mr-2"></span>
+            <a href="#" class="hover:underline">Sales and Refunds</a>
+            <span class="px-1 border-r-slate-300 border-r mr-2"></span>
+            <a href="#" class="hover:underline">Legal</a>
+            <span class="px-1 border-r-slate-300 border-r mr-2"></span>
+            <a href="#" class="hover:underline">Site Map</a>
+          </div>
+          <a
+            href="#"
+            class="order-1 mb-4 md:mb-0 md:order-3 text-gray-700 text-xs font-light hover:underline"
+            >United States</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
